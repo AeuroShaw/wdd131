@@ -1,57 +1,107 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FOLUSO EYURO |WDD 130 | Personal Homepage</title>
-    <link rel="stylesheet" href="styles/styles.css">
-    <meta name="description" content="Personal homepage of Eyuro Foluso, a Lagos-based BYU–Pathway Worldwide web development student learning to code and build future-ready skills.">
-    <meta name="author" content="Eyuro Foluso">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Eyuro Foluso | WDD 131 | Course Landing Page</title>
+
+<meta name="description" content="Course landing page of Eyuro Foluso, a BYU Pathway web development student from Lagos, Nigeria.">
+<meta name="author" content="Eyuro Foluso">
+
+<link rel="stylesheet" href="styles/styles.css">
 </head>
+
 <body>
-        <header>
-     <nav>
-  <a href="#">Home</a>
-  <a href="wwr/">Rafting Website</a>
-  <a href="https://linkedin.com" target="_blank">LinkedIn</a>
-  <a href="https://facebook.com" target="_blank">Facebook</a>
+
+<header>
+<h1>WDD 131: Dynamic Web Fundamentals</h1>
+
+<nav>
+<a href="https://linkedin.com" target="_blank">LinkedIn</a>
+<a href="#">I-Learn</a>
+<a href="https://www.churchofjesuschrist.org/study/scriptures" target="_blank">Scripture</a>
+<a href="#">Final Project</a>
 </nav>
-    </header>
-   <main>
-          <h1>Eyuro Ben Jnr | WDD 130</h1>
-    <img src="images/profile.jpg" alt="Profile picture of Eyuro Foluso" width="200" class="profile-image">
-    <p>
-        My name is Eyuro Foluso. I live in Lagos, Nigeria, and I am currently studying web development
-        through the BYU–Idaho Pathway program. I enjoy learning new technology skills, improving myself,
-        and working toward a better future.
-<ul class="box">
-  <li>
-    <a href="https://www.churchofjesuschrist.org/temples/details/aba-nigeria-temple" target="_blank">
-      Aba Nigeria Temple
-    </a>
-  </li>
-  <li>
-    <a href="https://www.churchofjesuschrist.org/temples/details/salt-lake-temple" target="_blank">
-      Salt Lake Temple
-    </a>
-  </li>
-  <li>
-    <a href="https://www.churchofjesuschrist.org/temples/details/rome-italy-temple" target="_blank">
-      Rome Italy Temple
-    </a>
-  </li>
+</header>
+
+<main>
+
+<h2 class="student-name">Eyuro Foluso</h2>
+
+<div class="container">
+
+<!-- ABOUT ME SECTION -->
+<section class="card">
+
+<h3>About Me</h3>
+
+<div class="about">
+
+<p>
+My name is Eyuro Foluso and I live in Lagos, Nigeria. I am currently studying
+web development through the BYU–Idaho Pathway program. I enjoy learning new
+technology skills, improving myself, and building a better future through
+programming and web development.
+</p>
+
+<img src="images/profile.jpg" alt="Profile picture of Eyuro Foluso">
+
+</div>
+
+<h4>Lagos, Nigeria</h4>
+
+<div class="location">
+
+<img src="images/nigeria.jpeg" alt="Flag or view of Nigeria">
+
+<p>
+Lagos is a vibrant coastal city in Nigeria known for its diverse culture,
+fast-growing economy, and energetic lifestyle. It is one of the largest
+cities in Africa and a major center for technology, entertainment, and
+commerce.
+</p>
+
+</div>
+
+</section>
+
+
+<!-- WEB DEV RESOURCES -->
+<section class="card">
+
+<h3>Web Dev Resources</h3>
+
+<ul>
+<li><a href="https://dev.to/" target="_blank">Dev.to Community</a></li>
+<li><a href="https://www.smashingmagazine.com/" target="_blank">Smashing Magazine</a></li>
+<li><a href="https://css-tricks.com/" target="_blank">CSS Tricks</a></li>
+<li><a href="https://www.w3schools.com/" target="_blank">W3 Schools</a></li>
+<li><a href="https://www.udemy.com/" target="_blank">Udemy</a></li>
+<li><a href="https://picsum.photos/" target="_blank">Lorem Picsum</a></li>
 </ul>
 
-    </main>
-    <aside class="box image-overlay">
-    <h2>Lagos, Nigeria</h2>
-    <img src="images/nigeria.jpeg" alt="A view of Lagos, Nigeria">
-    <p>Lagos is a vibrant coastal city in Nigeria, known for its energy, diverse culture, business hubs, and
-       beautiful waterways. It is one of the fastest-growing cities in Africa and a major center for technology,
-       entertainment, and commerce.</p>
-</aside>
-    <footer>
-         <p>&copy; 2026 | Eyuro Foluso | Lagos, Nigeria</p>
-    </footer>
+</section>
+
+</div>
+
+</main>
+
+
+<footer>
+
+<p>©2026 🌸 Eyuro Foluso 🌸 Lagos, Nigeria</p>
+
+<p id="lastModified"></p>
+
+</footer>
+
+<script>
+document.getElementById("lastModified").textContent =
+"Last Modification: " + document.lastModified;
+</script>
+
 </body>
 </html>
+```
