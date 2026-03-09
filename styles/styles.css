@@ -1,3 +1,4 @@
+```css
 /* Universal CSS Reset */
 * {
   margin: 0;
@@ -5,58 +6,128 @@
   box-sizing: border-box;
 }
 
-main {
-  max-width: 840px;
-  margin: 0 auto;
+/* Page Layout */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #e9ecef;
 }
 
+main {
+  max-width: 900px;
+  margin: 20px auto;
+}
+
+/* Header */
+header {
+  background-color: #244a6b;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+/* Navigation */
 nav {
-  background-color: lightblue;
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
   padding: 10px;
 }
 
 nav a {
-  color: #000;
-  padding: 10px;
-  display: block;
+  color: white;
+  padding: 8px 10px;
   text-decoration: none;
+  font-weight: bold;
 }
 
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Headings */
 h1 {
-  color: navy;
+  margin-bottom: 10px;
 }
 
-p {
-  padding: 0;
+.student-name {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 1.8rem;
 }
 
-main img {
-  width: 200px;
+/* Container for the two cards */
+.container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+}
+
+/* Card Styling */
+.card {
+  background: white;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  padding: 15px;
+}
+
+.card h3 {
+  background-color: #2f5f87;
+  color: white;
+  padding: 10px;
+  border-radius: 6px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* About section layout */
+.about {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.about img {
+  width: 120px;
   height: auto;
-  border: 2px solid #333;
-  padding: 5px;
-  box-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+  border-radius: 6px;
 }
 
-aside {
-  width: 300px;
+/* Location section */
+.location {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
 }
 
-
-aside img {
-  width: 200px;
+.location img {
+  width: 120px;
   height: auto;
 }
 
+/* Resource list */
+ul {
+  margin-left: 20px;
+}
+
+ul li {
+  margin-bottom: 8px;
+}
+
+/* Footer */
 footer {
-  margin-top: 20px;
+  margin-top: 30px;
   border-top: 2px solid #333;
   text-align: center;
+  padding: 15px;
+  background-color: #244a6b;
+  color: white;
 }
 
 /* =========================
    Class Selectors
    ========================= */
+
 .box {
   margin: 1rem;
   padding: 1rem;
@@ -89,6 +160,5 @@ footer {
   background-color: rgb(0 0 0 / 60%);
   color: #fff;
   padding: 0.5rem 1rem;
-  margin: 0;
 }
-
+```
