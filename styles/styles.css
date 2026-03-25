@@ -1,33 +1,37 @@
-```css
-/* Universal CSS Reset */
+:root {
+  --primary: #244a6b;
+  --secondary: #2f5f87;
+  --dark: #333;
+  --light-bg: #e9ecef;
+  --card-bg: #ffffff;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Page Layout */
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #e9ecef;
+  background-color: var(--light-bg);
 }
 
 main {
   max-width: 900px;
   margin: 20px auto;
+  padding: 10px;
 }
 
-/* Header */
 header {
-  background-color: #244a6b;
+  background-color: var(--primary);
   color: white;
   text-align: center;
   padding: 15px;
 }
 
-/* Navigation */
 nav {
-  background-color: #333;
+  background-color: var(--dark);
   display: flex;
   justify-content: center;
   gap: 30px;
@@ -45,7 +49,6 @@ nav a:hover {
   text-decoration: underline;
 }
 
-/* Headings */
 h1 {
   margin-bottom: 10px;
 }
@@ -56,23 +59,27 @@ h1 {
   font-size: 1.8rem;
 }
 
-/* Container for the two cards */
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 .container {
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 20px;
 }
 
-/* Card Styling */
 .card {
-  background: white;
+  background: var(--card-bg);
   border-radius: 8px;
   border: 1px solid #ccc;
   padding: 15px;
 }
 
 .card h3 {
-  background-color: #2f5f87;
+  background-color: var(--secondary);
   color: white;
   padding: 10px;
   border-radius: 6px;
@@ -80,7 +87,6 @@ h1 {
   margin-bottom: 10px;
 }
 
-/* About section layout */
 .about {
   display: flex;
   gap: 15px;
@@ -93,7 +99,6 @@ h1 {
   border-radius: 6px;
 }
 
-/* Location section */
 .location {
   display: flex;
   gap: 15px;
@@ -105,7 +110,6 @@ h1 {
   height: auto;
 }
 
-/* Resource list */
 ul {
   margin-left: 20px;
 }
@@ -114,24 +118,35 @@ ul li {
   margin-bottom: 8px;
 }
 
-/* Footer */
-footer {
-  margin-top: 30px;
-  border-top: 2px solid #333;
-  text-align: center;
-  padding: 15px;
-  background-color: #244a6b;
-  color: white;
+.weather h2::after {
+  content: " ⛅";
 }
 
-/* =========================
-   Class Selectors
-   ========================= */
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  .about,
+  .location {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+footer {
+  margin-top: 30px;
+  border-top: 2px solid var(--dark);
+  text-align: center;
+  padding: 15px;
+  background-color: var(--primary);
+  color: white;
+}
 
 .box {
   margin: 1rem;
   padding: 1rem;
-  border: 1px solid #333;
+  border: 1px solid var(--dark);
   background-color: #f0f4ff;
   color: #222;
 }
@@ -161,4 +176,3 @@ footer {
   color: #fff;
   padding: 0.5rem 1rem;
 }
-```
