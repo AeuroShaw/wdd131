@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Review Submitted</title>
+
+<link rel="stylesheet" href="css/styles.css">
+
+<script>
+
+window.onload = function(){
+
+let reviews = localStorage.getItem("reviewCount");
+
+if(reviews == null){
+reviews = 0;
+}
+
+reviews++;
+
+localStorage.setItem("reviewCount", reviews);
+
+document.getElementById("counter").textContent = reviews;
+
+}
+
+</script>
+
+</head>
+
+<body>
+
+<header>
+<h1>Thank You!</h1>
+</header>
+
+<main>
+
+<p>Your review has been submitted successfully.</p>
+
+<p>Total Reviews Submitted: <strong id="counter"></strong></p>
+
+<a href="form.html">Submit another review</a>
+
+</main>
+
+<footer>
+
+<p>©2024 🌸 Rubia Magdelena Francesco 🌸 Madagascar</p>
+
+</footer>
+
+</body>
+</html>
