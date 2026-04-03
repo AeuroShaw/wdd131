@@ -176,3 +176,71 @@ footer {
   color: #fff;
   padding: 0.5rem 1rem;
 }
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background: var(--card-bg);
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+label {
+  font-weight: bold;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #bbb;
+  border-radius: 5px;
+}
+
+textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.rating {
+  display: flex;
+  gap: 15px;
+}
+
+.rating label {
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+input[type="submit"] {
+  background-color: var(--primary);
+  color: white;
+  font-size: 1.1rem;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+input[type="submit"]:hover {
+  background-color: var(--secondary);
+}
+
+@media (max-width: 600px) {
+
+  form {
+    padding: 15px;
+  }
+
+  input,
+  select,
+  textarea {
+    font-size: 16px;
+  }
+
+}
